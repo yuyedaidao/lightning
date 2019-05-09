@@ -1,0 +1,22 @@
+{
+  "name": "lightning",
+  "version": "1.0.0",
+  "description": "富贵H5模块与原生桥接框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyedaidao/lightning.git"
+  },
+  "author": "wangyeqing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuyedaidao/lightning/issues"
+  },
+  "homepage": "https://github.com/yuyedaidao/lightning#readme",
+  "dependencies": {
+    "dsbridge": "^3.1.4"
+  }
+}
