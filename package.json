@@ -1,5 +1,5 @@
 {
-  "name": "lightning",
+  "name": "fg_lightning",
   "version": "1.0.0",
   "description": "富贵H5模块与原生桥接框架",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/yuyedaidao/lightning.git"
   },
-  "author": "wangyeqing",
+  "author": "wyq",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yuyedaidao/lightning/issues"
