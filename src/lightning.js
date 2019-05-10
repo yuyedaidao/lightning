@@ -25,6 +25,23 @@ let lightning = {
         } else {
             throw new Error("原生客户端没有实现方法:"+method)
         }
+    },
+    register: function(method, handler) {
+        dsbridge.register(method, function(params) {
+            if (params) {
+                let result = JSON.parse(params)
+                handler(result)
+            } else {
+                handler()
+            }
+        })
+    },
+    route: function(scheme, enter, params) {
+        dsbridge.call("route", {
+            scheme: scheme,
+            enter: enter,
+            params: params
+        })
     }
 }
 
