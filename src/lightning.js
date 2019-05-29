@@ -42,6 +42,13 @@ let lightning = {
             enter: enter,
             params: params
         })
+    },
+    perform: function(context, method, params) {
+        dsbridge.call("perform",{
+            context: context,
+            method: method,
+            params: params
+        })
     }
 }
 
