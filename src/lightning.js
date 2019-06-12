@@ -49,6 +49,15 @@ let lightning = {
             method: method,
             params: params
         })
+    }, 
+    multipleBackCall: function(method, args, callback) {
+        dsbridge.call(method, args, function(value) {
+            try {
+                callback(JSON.parse(value))
+            } catch(e) {
+                callback(value)
+            }
+        })
     }
 }
 
