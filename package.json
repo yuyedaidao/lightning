@@ -1,6 +1,6 @@
 {
   "name": "fg_lightning",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "富贵H5模块与原生桥接框架",
   "main": "index.js",
   "scripts": {
