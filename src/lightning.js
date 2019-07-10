@@ -50,6 +50,13 @@ let lightning = {
             params: params
         })
     }, 
+    broadcast: function(scheme, method, params) {
+        dsbridge.call("broadcast",{
+            scheme: scheme,
+            method: method,
+            params: params
+        })
+    }, 
     multipleBackCall: function(method, args, callback) {
         dsbridge.call(method, args, function(value) {
             try {
