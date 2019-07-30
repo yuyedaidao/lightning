@@ -5,7 +5,7 @@ let lightning = {
         if (dsbridge.hasNativeMethod(method, 'syn')) {
             let result = dsbridge.call(method, args)
             if (typeof(result) === "undefined" || typeof(result) === "null") {
-                return
+                return null
             }
             try {
                 return JSON.parse(result)
