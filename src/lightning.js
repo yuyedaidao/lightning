@@ -4,6 +4,9 @@ let lightning = {
     call: function(method, args) {
         if (dsbridge.hasNativeMethod(method, 'syn')) {
             let result = dsbridge.call(method, args)
+            if (typeof(result) === "undefined" || typeof(result) === "null") {
+                return
+            }
             try {
                 return JSON.parse(result)
             } catch(e) {
